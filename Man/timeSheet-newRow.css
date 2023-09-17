@@ -1,0 +1,97 @@
+*{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    --text-color : #444444 ;
+}
+
+.newRow{
+    width: 100%;
+    height: 59px;
+    border-bottom: 1px solid var(--acellbi-theme);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+.innerNewRow{
+    height: 59px;
+    width: 93.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#name{
+    width: 18%;
+    text-align: left;
+}
+
+#id{
+    width: 13%;
+    text-align: left;
+}
+
+#type{
+    width: 10%;
+}
+
+#status{
+    width: 10%;
+}
+
+#sd{
+    width: 8%;
+}
+#inner-details{
+    width: 34% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    >span{
+        width: 25%;
+    }
+    
+}
+.b-text{
+    text-align: center;
+    color:var(--text-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+.s-text{
+    font-weight: 700;
+    text-align: center;
+    color:var(--text-color);
+}
+.status-btn{
+    font-size:1rem;
+    font-weight: 700;
+    width: 90px;
+    height:35px ;
+    border-radius: 5px;
+    &.app{
+        background-color: var(--light-acellbi-theme);
+        border:2px solid var(--acellbi-theme);
+        color: var(--acellbi-theme);
+    }
+    &.rev{
+        background-color: var(--acellbi-theme);
+        border:2px solid var(--acellbi-theme);
+        color: var(--bc-white);
+    }
+    &.rej{
+        background-color: rgb(254, 247, 247);
+        border:2px solid rgb(189, 1, 1);
+        color: rgb(189, 1, 1);
+    }
+}
+.c{
+    color: var(--submit-button);
+}
+.ss-text{
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+}

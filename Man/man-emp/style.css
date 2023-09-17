@@ -1,0 +1,116 @@
+body{
+    --bc-lightgreenishblue : #E6FFFB ;
+    --bc-white : #ffffff ;
+    --acellbi-theme : #79CAD0;
+    --light-acellbi-theme : #F5FDFF;
+    --submit-button : #00007F;
+    height: 100svh;
+    width: 100vw;
+}
+#background{
+    height: 100svh;
+    width: 100vw;
+    position: absolute;
+}
+#upper-box{
+    height: 33.3333%;
+    width: 100%;
+    background-color: var(--bc-lightgreenishblue);
+}
+#lower-box{
+    height: 66.6666%;
+    width: 100%;
+    background-color: var(--bc-white);
+}
+#timeCard{
+    position: relative;
+    height: 100svh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+#logo-and-nav{
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+    width: 90vw;
+    margin: 0 auto;
+    >#logo-conatiner{
+        width: 750px;
+        >img{
+            height: 50px;
+        }
+    }
+}
+.cover{
+    display: none;
+}
+#overlay-cover{
+    position: fixed;
+    z-index: 0;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    background-color:#fff0;
+}
+@media screen and (max-width: 1400px) {
+    
+    .addProject,.addTask{
+        font-size: x-small;
+    }
+    #footer-controls{
+        width: 26%;
+    }
+    .ss-text{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1470px) {
+    .ss-text{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1390px) {
+    .ss-text{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1255px) {
+    .ss-text{
+        font-size: 10px;
+    }
+    #downloads{
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cover{
+        position: fixed;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        color: var(--bc-white);
+        background-color: var(--acellbi-theme);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+    }
+}
+@media screen and (max-height: 500px) {
+    .cover{
+        position: fixed;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        color: var(--bc-white);
+        background-color: var(--acellbi-theme);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+        
+    }
+}

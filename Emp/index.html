@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./general.css">
+    <link rel="stylesheet" href="./manager-details.css">
+    <link rel="stylesheet" href="./user-details.css">
+    <link rel="stylesheet" href="./timeSheet-card.css">
+    <link rel="stylesheet" href="./webkit-scroll.css">
+    <link rel="stylesheet" href="./timeSheet-main-footer.css">
+    <link rel="stylesheet" href="./timeSheet-newRow.css">
+    <link rel="stylesheet" href="./timeSheet-footer.css">
+    <link rel="stylesheet" href="./addProject-form.css">
+    <link rel="stylesheet" href="./addTask-form.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d70f37b006.js" crossorigin="anonymous"></script>
+    <title>Accelbi</title>
+</head>
+<body>
+    <div class="cover">Dimensions are too small</div>
+    <div id="overlay-cover"></div>
+
+    <section id="background">
+        <div id="upper-box"></div>
+        <div id="lower-box"></div>
+    </section>
+
+
+    <section id="timeCard">
+        <div id="logo-and-nav">
+            <div id="logo-conatiner">
+            <img src="accelbi-logo-color.png" alt="accelbi-logo-color">
+            </div>
+            <div id="manager-details">
+                <div id="manager-name">
+                <span class="ac-s-b">Manager: </span><span class="sbc-s-b manager-name-field"> Churchill D'souza</span>
+                </div>
+                <div class="manager-details-wrapper">
+                <span class="icon-wrapper dja">
+                    <i class="fa-regular fa-envelope"></i>
+                </span>
+                <span class="sbc-s-b details-wrapper">user@example.com</span>
+                </div>
+                <div class="manager-details-wrapper">
+                <span class="icon-wrapper dja">
+                    <i class="fa-solid fa-phone"></i>
+                </span>
+                <span class="sbc-ss-b details-wrapper">9552366523</span>
+                </div>
+            </div>
+              <div id="user-full-details">
+                <div id="profile-pic" class="dja">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div id="user-details">
+                    <div class="sbc-s-b user-name">
+                        Aldrin Lewis
+                    </div>
+                    <div class="ac-s-b user-code">
+                        A75KTW
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div id="timeSheet-card">
+            <div id="timeSheet-title">
+                <span>Timesheet</span>
+                <div id="calender">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span id="current-week">This Week</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div id="timeSheet-main">
+
+                <div id="timeSheet-main-heading">
+
+                        <span id="word-Project">Project</span>
+                        <span id="word-Task">Task</span>
+                        <span id="allDate">
+                            <span class="word-Day">
+                                Mon 
+                                <span class="word-Date">
+                                        <span class="word-Mon">
+                                            Jul
+                                        <span class="word-Mon">
+                                            22
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+
+                        
+                            <span class="word-Day">
+                                Tue 
+                                <span class="word-Date">
+                                        <span class="word-Mon">
+                                            Jul
+                                        <span class="word-Mon">
+                                            22
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        
+                            <span class="word-Day">
+                                Wed 
+                                <span class="word-Date">
+                                        <span class="word-Mon">
+                                            Jul
+                                        <span class="word-Mon">
+                                            22
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        
+                            <span class="word-Day">
+                                Thu 
+                                <span class="word-Date">
+                                        <span class="word-Mon">
+                                            Jul
+                                        <span class="word-Mon">
+                                            22
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        
+                            <span class="word-Day">
+                                Fri 
+                                <span class="word-Date">
+                                        <span class="word-Mon">
+                                            Jul
+                                        <span class="word-Mon">
+                                            22
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                            
+                        
+                            <span class="word-Day">
+                                Sat 
+                                <span class="word-Date">
+                                        <span class="word-Mon">
+                                            Jul
+                                        <span class="word-Mon">
+                                            22
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        
+                            <span class="word-Day">
+                                Sun 
+                                <span class="word-Date">
+                                        <span class="word-Mon">
+                                            Jul
+                                        <span class="word-Mon">
+                                            22
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                </div>
+
+                <div id="timeSheet-update">
+
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <div class="addProject">
+                            + Click to add Details
+                        </div>
+                        <div class="addTask">
+                            + Click to add Details
+                        </div>
+                       <div class="inputHours-wrapper">
+                        <input type="text" class="inputHours" id="inputHours1">
+                        <input type="text" class="inputHours" id="inputHours2">
+                        <input type="text" class="inputHours" id="inputHours3">
+                        <input type="text" class="inputHours" id="inputHours4">
+                        <input type="text" class="inputHours" id="inputHours5">
+                        <input type="text" class="inputHours" id="inputHours6">
+                        <input type="text" class="inputHours" id="inputHours7">
+                       </div>
+                      </div>
+                    </div>
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <div class="addProject">
+                            + Click to add Details
+                        </div>
+                        <div class="addTask">
+                            + Click to add Details
+                        </div>
+                       <div class="inputHours-wrapper">
+                        <input type="text" class="inputHours" id="inputHours1">
+                        <input type="text" class="inputHours" id="inputHours2">
+                        <input type="text" class="inputHours" id="inputHours3">
+                        <input type="text" class="inputHours" id="inputHours4">
+                        <input type="text" class="inputHours" id="inputHours5">
+                        <input type="text" class="inputHours" id="inputHours6">
+                        <input type="text" class="inputHours" id="inputHours7">
+                       </div>
+                      </div>
+                    </div>
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <div class="addProject">
+                            + Click to add Details
+                        </div>
+                        <div class="addTask">
+                            + Click to add Details
+                        </div>
+                       <div class="inputHours-wrapper">
+                        <input type="text" class="inputHours" id="inputHours1">
+                        <input type="text" class="inputHours" id="inputHours2">
+                        <input type="text" class="inputHours" id="inputHours3">
+                        <input type="text" class="inputHours" id="inputHours4">
+                        <input type="text" class="inputHours" id="inputHours5">
+                        <input type="text" class="inputHours" id="inputHours6">
+                        <input type="text" class="inputHours" id="inputHours7">
+                       </div>
+                      </div>
+                    </div>
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <div class="addProject">
+                            + Click to add Details
+                        </div>
+                        <div class="addTask">
+                            + Click to add Details
+                        </div>
+                       <div class="inputHours-wrapper">
+                        <input type="text" class="inputHours" id="inputHours1">
+                        <input type="text" class="inputHours" id="inputHours2">
+                        <input type="text" class="inputHours" id="inputHours3">
+                        <input type="text" class="inputHours" id="inputHours4">
+                        <input type="text" class="inputHours" id="inputHours5">
+                        <input type="text" class="inputHours" id="inputHours6">
+                        <input type="text" class="inputHours" id="inputHours7">
+                       </div>
+                      </div>
+                    </div>
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <div class="addProject">
+                            + Click to add Details
+                        </div>
+                        <div class="addTask">
+                            + Click to add Details
+                        </div>
+                       <div class="inputHours-wrapper">
+                        <input type="text" class="inputHours" id="inputHours1">
+                        <input type="text" class="inputHours" id="inputHours2">
+                        <input type="text" class="inputHours" id="inputHours3">
+                        <input type="text" class="inputHours" id="inputHours4">
+                        <input type="text" class="inputHours" id="inputHours5">
+                        <input type="text" class="inputHours" id="inputHours6">
+                        <input type="text" class="inputHours" id="inputHours7">
+                       </div>
+                      </div>
+                    </div>
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <div class="addProject">
+                            + Click to add Details
+                        </div>
+                        <div class="addTask">
+                            + Click to add Details
+                        </div>
+                       <div class="inputHours-wrapper">
+                        <input type="text" class="inputHours" id="inputHours1">
+                        <input type="text" class="inputHours" id="inputHours2">
+                        <input type="text" class="inputHours" id="inputHours3">
+                        <input type="text" class="inputHours" id="inputHours4">
+                        <input type="text" class="inputHours" id="inputHours5">
+                        <input type="text" class="inputHours" id="inputHours6">
+                        <input type="text" class="inputHours" id="inputHours7">
+                       </div>
+                      </div>
+                    </div>
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <div class="addProject">
+                            + Click to add Details
+                        </div>
+                        <div class="addTask">
+                            + Click to add Details
+                        </div>
+                       <div class="inputHours-wrapper">
+                        <input type="text" class="inputHours" id="inputHours1">
+                        <input type="text" class="inputHours" id="inputHours2">
+                        <input type="text" class="inputHours" id="inputHours3">
+                        <input type="text" class="inputHours" id="inputHours4">
+                        <input type="text" class="inputHours" id="inputHours5">
+                        <input type="text" class="inputHours" id="inputHours6">
+                        <input type="text" class="inputHours" id="inputHours7">
+                       </div>
+                      </div>
+                    </div>
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <div class="addProject">
+                            + Click to add Details
+                        </div>
+                        <div class="addTask">
+                            + Click to add Details
+                        </div>
+                       <div class="inputHours-wrapper">
+                        <input type="text" class="inputHours" id="inputHours1">
+                        <input type="text" class="inputHours" id="inputHours2">
+                        <input type="text" class="inputHours" id="inputHours3">
+                        <input type="text" class="inputHours" id="inputHours4">
+                        <input type="text" class="inputHours" id="inputHours5">
+                        <input type="text" class="inputHours" id="inputHours6">
+                        <input type="text" class="inputHours" id="inputHours7">
+                       </div>
+                      </div>
+                    </div>
+
+
+                    
+
+                    
+
+                </div>
+                <div id="timeSheet-main-footer">
+
+                        <div class="inner-timeSheet-footer">
+                          <div class="totalHours-info">Total hours worked : 5.6hrs</div>
+                          <div class="word-Total">Total</div>
+                         <div class="totalHours-wrapper">
+                          <input type="text" class="totalHours" id="totalHours1">
+                          <input type="text" class="totalHours" id="totalHours2">
+                          <input type="text" class="totalHours" id="totalHours3">
+                          <input type="text" class="totalHours" id="totalHours4">
+                          <input type="text" class="totalHours" id="totalHours5">
+                          <input type="text" class="totalHours" id="totalHours6">
+                          <input type="text" class="totalHours" id="totalHours7">
+                         </div>
+                        </div>
+                      
+                </div>
+            </div>
+
+
+            <div id="timeSheet-footer">
+                <div id="footer-controls">
+                <button id="addNewRow-btn">
+                    <div id="plus-wrapper" class="dja"><i class="fa-solid fa-plus"></i></div><span>Add new row</span></button>
+                <button id="submit-btn">SUBMIT</button>
+               </div>
+                <div id="info-of-appr-and-subm-date">
+                    <span id="emp-subm-date">Employee Submission Date: <span id="emp-subm-date-value">22 Jul 2023</span> </span>
+                    <span id="mang-appr-date">Manager Approval Date: <span id="mang-appr-date-input">22 Jul 2023</span></span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section id="addProject-form">
+        <div class="title dja">PROJECT
+        <div id="addProject-close"><i class="fa-regular fa-circle-xmark"></i></div>
+        </div>
+        <form action="#">
+            <div>
+            <label for="p-name">Name:</label>
+            <input type="text" name="p-name" id="project-name">
+            </div>
+            <div>
+            <label for="p-code">Code:</label>
+            <input type="text" name="p-code" id="project-code">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="addTask-form">
+        <div class="title dja">TASK
+        <div id="addTask-close"><i class="fa-regular fa-circle-xmark"></i></div>
+        </div>
+        <form action="#">
+            <div>
+            <label for="t-name">Name:</label>
+            <input type="text" name="t-name" id="task-name">
+            </div>
+            <div>
+            <label for="t-code">Code:</label>
+            <input type="text" name="t-code" id="task-code">
+            </div>
+            <div>
+            <label for="t-desc">Desc:</label>
+            
+            <textarea name="t-desc" id="task-desc" ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+</body>
+<script src="script.js"></script>
+</html>

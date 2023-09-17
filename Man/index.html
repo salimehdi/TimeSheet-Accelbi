@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./general.css">
+    <link rel="stylesheet" href="./downloads.css">
+    <link rel="stylesheet" href="./user-details.css">
+    <link rel="stylesheet" href="./timeSheet-card.css">
+    <link rel="stylesheet" href="./webkit-scroll.css">
+    <link rel="stylesheet" href="./timeSheet-main-footer.css">
+    <link rel="stylesheet" href="./timeSheet-newRow.css">
+    <link rel="stylesheet" href="./timeSheet-footer.css">
+    <link rel="stylesheet" href="./addProject-form.css">
+    <link rel="stylesheet" href="./addTask-form.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d70f37b006.js" crossorigin="anonymous"></script>
+    <title>Accelbi</title>
+</head>
+<body>
+    <div class="cover">Dimensions are too small</div>
+
+    <section id="background">
+        <div id="upper-box"></div>
+        <div id="lower-box"></div>
+    </section>
+
+
+    <section id="timeCard">
+        <div id="logo-and-nav">
+            <div id="logo-conatiner">
+            <img src="accelbi-logo-color.png" alt="accelbi-logo-color">
+            </div>
+
+            <div id="downloads">
+                <div class="down-wrapper"><div class="dja icon-wrapper"><i class="fa-regular fa-file-pdf"></i></div>Download PDF Report</div>
+                <div class="down-wrapper"><div class="dja icon-wrapper"><i class="fa-regular fa-file-excel"></i></div>Download Excel Report</div>
+            </div>
+
+              <div id="user-full-details">
+                <div id="profile-pic" class="dja">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div id="user-details">
+                    <div class="sbc-s-b user-name">
+                        Aldrin Lewis
+                    </div>
+                    <div class="ac-s-b user-code">
+                        A75KTW
+                    </div>
+              </div>
+            </div>
+        </div>
+        <div id="timeSheet-card">
+            <div id="timeSheet-title">
+                <span>Timesheet</span>
+                <div id="calender">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <span id="current-week">This Week</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <div id="timeSheet-main">
+
+                <div id="timeSheet-main-heading">
+                    
+                    <span class="b-text" id="word-name">Employee Name</span>
+                    <span class="b-text" id="word-id">Employee ID</span>
+                    <span class="b-text" id="word-type">Type</span>
+                    <div id="inner-details">
+                    <span class="s-text empW" id="word-thw ">Total hours worked</span>
+                    <span class="s-text" id="word-tp">Total Projects</span>
+                    <span class="s-text empT" id="word-tt">Total Tasks</span>
+                    <span class="s-text" id="word-la">Leave Availed</span>
+                    </div>
+                    <span class="b-text" id="word-status">Status</span>
+                    <span class="s-text" id="word-sd">Submision Date</span>
+                    
+                </div>
+
+                <div id="timeSheet-update">
+
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <span class="b-text" id="name">Lorem Epsum</span>
+                        <span class="c b-text" id="id">YT56K</span>
+                        <span class="b-text" id="type">Full-Time</span>
+                        <div id="inner-details">
+                        <span class="c b-text" id="thw">2</span>
+                        <span class="c b-text" id="tp">2</span>
+                        <span class="c b-text" id="tt">2</span>
+                        <span class="c b-text" id="la">2</span>
+                        </div>
+                        <span class="b-text" id="status"><button href="./man-emp/man-emp.html" class="status-btn app">Approved</button></span>
+                        <span class="c ss-text" id="sd">22 Dec 2020</span>
+                      </div>
+                    </div>
+
+
+                    <div class="newRow">
+                        <div class="innerNewRow">
+                          <span class="b-text" id="name">Lorem Epsum</span>
+                          <span class="c b-text" id="id">YT56K</span>
+                          <span class="b-text" id="type">Full-Time</span>
+                          <div id="inner-details">
+                          <span class="c b-text" id="thw">2</span>
+                          <span class="c b-text" id="tp">2</span>
+                          <span class="c b-text" id="tt">2</span>
+                          <span class="c b-text" id="la">2</span>
+                          </div>
+                          <span class="b-text" id="status"><button class="status-btn rev">Review</button></span>
+                          <span class="c ss-text" id="sd">22 Dec 2020</span>
+                        </div>
+                      </div>
+
+
+
+                      <div class="newRow">
+                        <div class="innerNewRow">
+                          <span class="b-text" id="name">Lorem Epsum</span>
+                          <span class="c b-text" id="id">YT56K</span>
+                          <span class="b-text" id="type">Full-Time</span>
+                          <div id="inner-details">
+                          <span class="c b-text" id="thw">2</span>
+                          <span class="c b-text" id="tp">2</span>
+                          <span class="c b-text" id="tt">2</span>
+                          <span class="c b-text" id="la">2</span>
+                          </div>
+                          <span class="b-text" id="status"><button class="status-btn rej">Rejected</button></span>
+                          <span class="c ss-text" id="sd">22 Dec 2020</span>
+                        </div>
+                      </div>
+                    
+                    
+                    
+                    
+                    
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <span class="b-text" id="name">Lorem Epsum</span>
+                        <span class="c b-text" id="id">YT56K</span>
+                        <span class="b-text" id="type">Full-Time</span>
+                        <div id="inner-details">
+                        <span class="c b-text" id="thw">2</span>
+                        <span class="c b-text" id="tp">2</span>
+                        <span class="c b-text" id="tt">2</span>
+                        <span class="c b-text" id="la">2</span>
+                        </div>
+                        <span class="b-text" id="status"><button class="status-btn app">Approved</button></span>
+                        <span class="c ss-text" id="sd">22 Dec 2020</span>
+                      </div>
+                    </div>
+
+
+                    <div class="newRow">
+                        <div class="innerNewRow">
+                          <span class="b-text" id="name">Lorem Epsum</span>
+                          <span class="c b-text" id="id">YT56K</span>
+                          <span class="b-text" id="type">Full-Time</span>
+                          <div id="inner-details">
+                          <span class="c b-text" id="thw">2</span>
+                          <span class="c b-text" id="tp">2</span>
+                          <span class="c b-text" id="tt">2</span>
+                          <span class="c b-text" id="la">2</span>
+                          </div>
+                          <span class="b-text" id="status"><button class="status-btn rev">Review</button></span>
+                          <span class="c ss-text" id="sd">22 Dec 2020</span>
+                        </div>
+                      </div>
+
+
+
+                      <div class="newRow">
+                        <div class="innerNewRow">
+                          <span class="b-text" id="name">Lorem Epsum</span>
+                          <span class="c b-text" id="id">YT56K</span>
+                          <span class="b-text" id="type">Full-Time</span>
+                          <div id="inner-details">
+                          <span class="c b-text" id="thw">2</span>
+                          <span class="c b-text" id="tp">2</span>
+                          <span class="c b-text" id="tt">2</span>
+                          <span class="c b-text" id="la">2</span>
+                          </div>
+                          <span class="b-text" id="status"><button class="status-btn rej">Rejected</button></span>
+                          <span class="c ss-text" id="sd">22 Dec 2020</span>
+                        </div>
+                      </div>
+                    
+                    
+                    
+                    
+                    
+                    <div class="newRow">
+                      <div class="innerNewRow">
+                        <span class="b-text" id="name">Lorem Epsum</span>
+                        <span class="c b-text" id="id">YT56K</span>
+                        <span class="b-text" id="type">Full-Time</span>
+                        <div id="inner-details">
+                        <span class="c b-text" id="thw">2</span>
+                        <span class="c b-text" id="tp">2</span>
+                        <span class="c b-text" id="tt">2</span>
+                        <span class="c b-text" id="la">2</span>
+                        </div>
+                        <span class="b-text" id="status"><button class="status-btn app">Approved</button></span>
+                        <span class="c ss-text" id="sd">22 Dec 2020</span>
+                      </div>
+                    </div>
+
+
+                    <div class="newRow">
+                        <div class="innerNewRow">
+                          <span class="b-text" id="name">Lorem Epsum</span>
+                          <span class="c b-text" id="id">YT56K</span>
+                          <span class="b-text" id="type">Full-Time</span>
+                          <div id="inner-details">
+                          <span class="c b-text" id="thw">2</span>
+                          <span class="c b-text" id="tp">2</span>
+                          <span class="c b-text" id="tt">2</span>
+                          <span class="c b-text" id="la">2</span>
+                          </div>
+                          <span class="b-text" id="status"><button class="status-btn rev">Review</button></span>
+                          <span class="c ss-text" id="sd">22 Dec 2020</span>
+                        </div>
+                      </div>
+
+
+
+                      <div class="newRow">
+                        <div class="innerNewRow">
+                          <span class="b-text" id="name">Lorem Epsum</span>
+                          <span class="c b-text" id="id">YT56K</span>
+                          <span class="b-text" id="type">Full-Time</span>
+                          <div id="inner-details">
+                          <span class="c b-text" id="thw">2</span>
+                          <span class="c b-text" id="tp">2</span>
+                          <span class="c b-text" id="tt">2</span>
+                          <span class="c b-text" id="la">2</span>
+                          </div>
+                          <span class="b-text" id="status"><button  class="status-btn rej">Rejected</button></span>
+                          <span class="c ss-text" id="sd">22 Dec 2020</span>
+                        </div>
+                      </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
+
+                    
+
+                    
+
+                </div>
+                
+            </div>
+
+
+            <div id="timeSheet-footer">
+                
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    
+
+
+</body>
+<script src="script.js"></script>
+</html>
